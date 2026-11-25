@@ -1,0 +1,1085 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff5f8">
+<title>For Ruqayya ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --pink: #e83e78;
+  --rose: #ff91b1;
+  --deep: #50152f;
+  --cream: #fff8f7;
+  --gold: #d6ad70;
+  --ink: #63344a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+h1,h2,h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.hearts {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.heart {
+  position: absolute;
+  bottom: -35px;
+  animation: floatUp linear forwards;
+  opacity: .65;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-115vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 70px 20px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 8% 15%,#ffe0eb,transparent 32%),
+    radial-gradient(circle at 92% 80%,#ffdce8,transparent 34%),
+    linear-gradient(145deg,#fffaf8,#ffedf3);
+}
+
+.hero:before,
+.hero:after {
+  content: "♡";
+  position: absolute;
+  color: #e83e7812;
+  font-size: clamp(180px,35vw,400px);
+  pointer-events: none;
+}
+
+.hero:before {
+  top: -100px;
+  left: -100px;
+}
+
+.hero:after {
+  right: -100px;
+  bottom: -150px;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  animation: rise 1s ease both;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: none; }
+}
+
+.photo-wrap {
+  width: clamp(190px,48vw,255px);
+  aspect-ratio: 1;
+  margin: 0 auto 32px;
+  position: relative;
+}
+
+.photo-wrap:before {
+  content: "";
+  position: absolute;
+  inset: -11px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  animation: spin 22s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 50%;
+  border: 9px solid white;
+  box-shadow: 0 20px 55px #b73c6a35;
+}
+
+.photo-tag {
+  position: absolute;
+  right: -25px;
+  bottom: 12px;
+  background: white;
+  color: var(--pink);
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 8px 25px #6a1c3a20;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.hero h1 {
+  font-size: clamp(42px,8vw,76px);
+  line-height: 1.12;
+  color: var(--deep);
+  margin: 18px 0;
+}
+
+.hero h1 span {
+  color: var(--pink);
+  font-style: italic;
+}
+
+.script {
+  font-family: 'Great Vibes', cursive;
+  color: var(--pink);
+  font-size: 38px;
+}
+
+.hero-copy {
+  max-width: 590px;
+  margin: 15px auto 0;
+  line-height: 1.9;
+  color: #80566b;
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  border-radius: 50px;
+  padding: 15px 30px;
+  background: linear-gradient(135deg,var(--pink),var(--rose));
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 12px 28px #e83e7840;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+.hero .btn {
+  margin-top: 28px;
+}
+
+/* SECTIONS */
+
+section {
+  max-width: 920px;
+  margin: auto;
+  padding: 85px 20px;
+  position: relative;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.heading small {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--pink);
+  font-weight: 700;
+}
+
+.heading h2 {
+  font-size: clamp(30px,5vw,45px);
+  color: var(--deep);
+  margin: 12px 0;
+}
+
+.heading p {
+  color: #987487;
+  line-height: 1.8;
+}
+
+/* STORY */
+
+.timeline {
+  max-width: 720px;
+  margin: auto;
+  position: relative;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: linear-gradient(var(--pink),#ffe0eb);
+}
+
+.story {
+  position: relative;
+  margin: 0 0 22px 48px;
+  padding: 27px;
+  background: white;
+  border: 1px solid #f8dce6;
+  border-radius: 22px;
+  box-shadow: 0 12px 32px #74314b0c;
+  transition: .3s;
+}
+
+.story:hover {
+  transform: translateY(-4px);
+}
+
+.story:before {
+  content: "♥";
+  position: absolute;
+  left: -44px;
+  top: 27px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--pink);
+  color: white;
+  font-size: 13px;
+}
+
+.chapter {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #c69aaa;
+  font-weight: 700;
+}
+
+.story h3 {
+  font-size: 23px;
+  color: var(--pink);
+  margin: 10px 0;
+}
+
+.story p {
+  font-size: 14px;
+  line-height: 1.95;
+  color: #76566a;
+}
+
+.story b {
+  color: var(--pink);
+}
+
+/* QUOTE */
+
+.quote {
+  max-width: 720px;
+  margin: 55px auto 0;
+  padding: 48px 24px;
+  text-align: center;
+  border-radius: 28px;
+  color: white;
+  background:
+    radial-gradient(circle at top right,#ff9dbb,transparent 45%),
+    linear-gradient(135deg,#391025,#8e2450,#d93675);
+  box-shadow: 0 20px 50px #8b285033;
+}
+
+.quote .symbol {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.quote h2 {
+  font-size: clamp(27px,5vw,38px);
+  margin-bottom: 15px;
+}
+
+.quote p {
+  font-size: 18px;
+  line-height: 2;
+  color: #ffe9f0;
+}
+
+/* PHOTO MEMORY */
+
+.memory-card {
+  max-width: 720px;
+  margin: auto;
+  background: white;
+  border: 1px solid #f6dce5;
+  border-radius: 26px;
+  padding: 18px;
+  box-shadow: 0 15px 45px #76334b12;
+}
+
+.memory-card img {
+  display: block;
+  width: 100%;
+  max-height: 580px;
+  object-fit: cover;
+  object-position: center 38%;
+  border-radius: 18px;
+}
+
+.memory-caption {
+  text-align: center;
+  padding: 22px 12px 12px;
+}
+
+.memory-caption h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+  color: var(--pink);
+  font-weight: 400;
+}
+
+.memory-caption p {
+  font-size: 14px;
+  color: #8c6b7c;
+  line-height: 1.8;
+  margin-top: 6px;
+}
+
+/* LOVE GRID */
+
+.love-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+
+.love-item {
+  background: white;
+  border: 1px solid #f8dce6;
+  border-radius: 19px;
+  padding: 24px 10px;
+  text-align: center;
+  box-shadow: 0 10px 25px #74314b09;
+  transition: .25s;
+}
+
+.love-item:hover {
+  transform: translateY(-5px);
+  border-color: #f1a9c0;
+}
+
+.love-item span {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 9px;
+}
+
+.love-item strong {
+  font-size: 13px;
+  color: var(--deep);
+}
+
+.love-line {
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+  color: var(--pink);
+  line-height: 1.4;
+  margin-top: 32px;
+}
+
+/* LOVE LETTER */
+
+.letter {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px;
+  background: white;
+  border: 1px solid #f4dce5;
+  border-radius: 8px;
+  box-shadow: 0 15px 45px #76334b0d;
+  position: relative;
+}
+
+.letter:after {
+  content: "♡";
+  position: absolute;
+  right: 22px;
+  top: 10px;
+  font-size: 38px;
+  color: #ffd1df;
+}
+
+.letter h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 42px;
+  color: var(--pink);
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+
+.letter p {
+  font-size: 14px;
+  line-height: 2;
+  color: #76566a;
+  margin-bottom: 15px;
+}
+
+.letter .sign {
+  font-family: 'Great Vibes', cursive;
+  text-align: right;
+  font-size: 31px;
+  color: var(--pink);
+}
+
+/* FINAL QUESTION */
+
+.proposal {
+  max-width: 820px;
+  margin: 20px auto 0;
+  padding: 68px 24px;
+  text-align: center;
+  border-radius: 32px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 0%,#e85b8e,transparent 42%),
+    linear-gradient(145deg,#290819,#761c45,#d93675);
+  box-shadow: 0 25px 60px #8b285044;
+}
+
+.proposal:after {
+  content: "♡";
+  position: absolute;
+  right: -15px;
+  bottom: -110px;
+  font-size: 260px;
+  color: #ffffff0b;
+  pointer-events: none;
+}
+
+.proposal > * {
+  position: relative;
+  z-index: 1;
+}
+
+.proposal .question {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #ffd6e3;
+  font-weight: 700;
+}
+
+.proposal h2 {
+  font-size: clamp(31px,6vw,52px);
+  line-height: 1.25;
+  margin: 23px 0;
+}
+
+.proposal p {
+  line-height: 1.9;
+  color: #ffe6ef;
+}
+
+.buttons {
+  position: relative;
+  min-height: 78px;
+  margin-top: 25px;
+}
+
+#yesBtn,#noBtn {
+  padding: 16px 30px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#yesBtn {
+  background: white;
+  color: var(--pink);
+  box-shadow: 0 10px 25px #0002;
+  text-decoration: none;
+  transition: .25s;
+}
+
+#yesBtn:hover {
+  transform: translateY(-4px);
+}
+
+#noBtn {
+  background: #ffffff20;
+  color: white;
+  border: 1px solid #ffffff70;
+  position: relative;
+}
+
+#result {
+  display: none;
+  margin-top: 24px;
+  padding: 27px 18px;
+  border: 1px solid #ffffff45;
+  border-radius: 20px;
+  background: #ffffff18;
+  line-height: 1.9;
+  animation: rise .6s ease;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  background: #fff0f5;
+  padding: 42px 20px;
+  color: #a4778c;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+footer .footer-script {
+  font-family: 'Great Vibes', cursive;
+  color: var(--pink);
+  font-size: 35px;
+}
+
+/* SCROLL ANIMATION */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .7s ease,transform .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+  section { padding: 68px 17px; }
+
+  .story {
+    padding: 22px 18px;
+    margin-left: 43px;
+  }
+
+  .timeline:before { left: 16px; }
+
+  .story:before {
+    left: -42px;
+    width: 27px;
+    height: 27px;
+  }
+
+  .story h3 { font-size: 20px; }
+  .story p { font-size: 13px; }
+
+  .love-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .letter { padding: 30px 22px; }
+  .memory-card { padding: 11px; }
+
+  .photo-tag {
+    right: -20px;
+    font-size: 10px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<!-- HERO -->
+
+<header class="hero">
+  <div class="hero-inner">
+
+    <div class="photo-wrap">
+      <img
+        class="hero-photo"
+        src="images/ruqayya.jpg"
+        alt="Ruqayya"
+      >
+      <span class="photo-tag">
+        ❤️ My Favourite Person
+      </span>
+    </div>
+
+    <p class="eyebrow">
+      A LITTLE SOMETHING, JUST FOR YOU
+    </p>
+
+    <h1>
+      To My Dearest<br>
+      <span>Ruqayya</span>
+    </h1>
+
+    <p class="script">With all my heart...</p>
+
+    <p class="hero-copy">
+      I didn't create this website just to show you
+      something beautiful. I created it because there
+      are feelings in my heart that words alone have
+      never been able to explain.
+    </p>
+
+    <a class="btn" href="#story">
+      Discover Our Story ♡
+    </a>
+
+  </div>
+</header>
+
+<!-- OUR STORY -->
+
+<section id="story">
+
+  <div class="heading reveal">
+    <small>EVERY LOVE HAS A BEGINNING</small>
+    <h2>Our Beautiful Story</h2>
+    <p>
+      And this is how my heart found its favourite person.
+    </p>
+  </div>
+
+  <div class="timeline">
+
+    <article class="story reveal">
+      <div class="chapter">CHAPTER 01 — THE BEGINNING</div>
+      <h3>The First Time I Saw You</h3>
+      <p>
+        Ruqayya, before we ever spoke,
+        <b>I had already fallen in love with you.</b>
+        From the very first moment I saw you,
+        something in my heart changed.
+        I could not explain it then, and I still
+        cannot fully explain it now.
+        I only knew that you were different.
+        You were special.
+      </p>
+    </article>
+
+    <article class="story reveal">
+      <div class="chapter">CHAPTER 02 — THE PROGRAM</div>
+      <h3>I Was Guiding You</h3>
+      <p>
+        We were both students in the same program,
+        and I was guiding you through it.
+        Helping you was never a burden to me.
+        <b>Every reason to be close to you felt like a blessing.</b>
+        I looked forward to every question,
+        every conversation, and every moment we shared.
+      </p>
+    </article>
+
+    <article class="story reveal">
+      <div class="chapter">CHAPTER 03 — CLOSER</div>
+      <h3>We Started Sitting Together</h3>
+      <p>
+        Then we started sitting at the same place.
+        That simple place became my favourite place
+        in the world, because that was where I could
+        see your smile up close.
+        Your presence made ordinary days feel beautiful.
+      </p>
+    </article>
+
+    <article class="story reveal">
+      <div class="chapter">CHAPTER 04 — A BEAUTIFUL DISCOVERY</div>
+      <h3>You Knew My Brothers</h3>
+      <p>
+        Later, we discovered that you knew some
+        of my brothers. It felt as if Allah had
+        already connected our lives before we even
+        realised it.
+        <b>It felt as if our story was already written.</b>
+      </p>
+    </article>
+
+    <article class="story reveal">
+      <div class="chapter">CHAPTER 05 — US</div>
+      <h3>Then We Started Talking So Much</h3>
+      <p>
+        From there, we started talking so much,
+        and I never got tired of it.
+        Your voice, your laughter, and your kindness
+        became the best part of my day.
+        Every conversation made me love you even more.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="quote reveal">
+    <div class="symbol">♡</div>
+    <h2>And Today, Ruqayya...</h2>
+    <p>
+      I can no longer hide it.<br>
+      Ruqayya, I love you.<br>
+      Since the beginning, until now,<br>
+      and Insha Allah, always.
+    </p>
+  </div>
+
+</section>
+
+<!-- HER PHOTOGRAPH -->
+
+<section>
+
+  <div class="heading reveal">
+    <small>A MOMENT TO REMEMBER</small>
+    <h2>Your Beautiful Picture</h2>
+    <p>
+      One photograph, because this is the one
+      I want to keep close to this story.
+    </p>
+  </div>
+
+  <div class="memory-card reveal">
+
+    <img
+      src="images/ruqayya.jpg"
+      alt="A favourite photograph of Ruqayya"
+      loading="lazy"
+    >
+
+    <div class="memory-caption">
+      <h3>Simply Beautiful, Ruqayya</h3>
+      <p>
+        Some pictures don't need a thousand words.
+        This one reminds me how special you are.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- THINGS I LOVE -->
+
+<section>
+
+  <div class="heading reveal">
+    <small>THERE IS SO MUCH TO LOVE</small>
+    <h2>What Makes You Special</h2>
+    <p>
+      Six little reminders of why you mean so much to me.
+    </p>
+  </div>
+
+  <div class="love-grid">
+
+    <div class="love-item reveal">
+      <span>😊</span>
+      <strong>Your Smile</strong>
+    </div>
+
+    <div class="love-item reveal">
+      <span>💬</span>
+      <strong>Your Voice</strong>
+    </div>
+
+    <div class="love-item reveal">
+      <span>🤍</span>
+      <strong>Your Heart</strong>
+    </div>
+
+    <div class="love-item reveal">
+      <span>✨</span>
+      <strong>Your Beauty</strong>
+    </div>
+
+    <div class="love-item reveal">
+      <span>🌸</span>
+      <strong>Your Kindness</strong>
+    </div>
+
+    <div class="love-item reveal">
+      <span>❤️</span>
+      <strong>Your Everything</strong>
+    </div>
+
+  </div>
+
+  <p class="love-line reveal">
+    I love you, Ruqayya...<br>
+    More than words can explain. ❤️
+  </p>
+
+</section>
+
+<!-- LOVE LETTER -->
+
+<section>
+
+  <div class="heading reveal">
+    <small>A MESSAGE FROM MY HEART</small>
+    <h2>A Letter For You</h2>
+  </div>
+
+  <div class="letter reveal">
+
+    <h3>My Dearest Ruqayya,</h3>
+
+    <p>
+      Sometimes I wonder how one person can make such
+      a beautiful difference in another person's life.
+      Then I think of you, and I understand.
+    </p>
+
+    <p>
+      I may not have the perfect words, and I may not
+      always know how to express everything I feel,
+      but one thing I know is that you are genuinely
+      special to me.
+    </p>
+
+    <p>
+      I pray that Allah guides us, blesses our intentions,
+      protects our hearts and makes whatever is good
+      for us easy.
+    </p>
+
+    <p>
+      I don't promise to be perfect.
+      I promise to keep learning, respecting you,
+      appreciating you and treating your heart with care.
+    </p>
+
+    <p>
+      You are a beautiful chapter in my life,
+      and I hope we create many more beautiful memories together.
+    </p>
+
+    <div class="sign">
+      With all my love, ❤️
+    </div>
+
+  </div>
+
+</section>
+
+<!-- THE BIG QUESTION -->
+
+<section>
+
+  <div class="proposal" id="proposal">
+
+    <p class="question">
+      A QUESTION FROM MY HEART ❤️
+    </p>
+
+    <h2>
+      Ruqayya,<br>
+      Will You Love Me?
+    </h2>
+
+    <p>
+      I have something special to ask you.
+      Would you allow me to love you, care for you,
+      appreciate you and make beautiful memories with you?
+
+      <br><br>
+
+      I don't promise to be perfect, but I promise
+      to respect you, value you and always treat
+      your heart with care.
+    </p>
+
+    <div class="buttons">
+
+      <a
+        id="yesBtn"
+        href="https://wa.me/2349027901097?text=Yes%20%F0%9F%A5%B9%E2%9D%A4%EF%B8%8F%20I%20will%20love%20you.%20You%20have%20made%20me%20so%20happy!"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Yes, I Will ❤️
+      </a>
+
+      <button id="noBtn" type="button">
+        No 🙈
+      </button>
+
+    </div>
+
+    <p style="margin-top:25px;font-size:13px;">
+      Whatever your answer, you deserve respect and happiness. 🤍
+    </p>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-script">
+    Made with love ❤️
+  </div>
+
+  <p>
+    Every word, every feeling, every heartbeat — for Ruqayya.
+  </p>
+
+  <p>© 2026 | A little piece of my heart.</p>
+
+</footer>
+
+<script>
+
+// FLOATING HEARTS
+
+const hearts = document.getElementById('hearts');
+
+const reduceMotion = window.matchMedia(
+  '(prefers-reduced-motion: reduce)'
+).matches;
+
+function createHeart(symbols = ['❤️','💕','💗','♡']) {
+
+  if (reduceMotion) return;
+
+  const heart = document.createElement('span');
+
+  heart.className = 'heart';
+
+  heart.textContent =
+    symbols[Math.floor(Math.random() * symbols.length)];
+
+  heart.style.left = Math.random() * 100 + '%';
+
+  heart.style.fontSize =
+    (12 + Math.random() * 18) + 'px';
+
+  heart.style.animationDuration =
+    (6 + Math.random() * 5) + 's';
+
+  hearts.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 11500);
+}
+
+if (!reduceMotion) {
+  setInterval(() => createHeart(), 850);
+}
+
+
+// SCROLL REVEAL ANIMATION
+
+const observer = new IntersectionObserver(entries => {
+
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting) {
+
+      entry.target.classList.add('visible');
+
+      observer.unobserve(entry.target);
+
+    }
+
+  });
+
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => {
+  observer.observe(el);
+});
+
+
+// PLAYFUL NO BUTTON
+
+const noBtn = document.getElementById('noBtn');
+const buttons = document.querySelector('.buttons');
+
+function runAway() {
+
+  const maxX = Math.max(
+    0,
+    buttons.clientWidth - noBtn.offsetWidth
+  );
+
+  const maxY = 48;
+
+  noBtn.style.position = 'absolute';
+
+  noBtn.style.left = Math.random() * maxX + 'px';
+
+  noBtn.style.top = Math.random() * maxY + 'px';
+
+}
+
+noBtn.addEventListener('mouseenter', runAway);
+noBtn.addEventListener('click', runAway);
+
+
+// YES BUTTON OPENS WHATSAPP
+// The WhatsApp link is already connected above.
+
+</script>
+
+</body>
+</html>
